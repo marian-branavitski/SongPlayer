@@ -1,0 +1,3 @@
+Swinging Uters,Five Lessons Learned,3.2,3,12000,users/U1/15 Five Lessons Learned.mp3,Rock,Single
+Nirvana,smells like teen spirit,2.1,4,100000,users/U1/01 Дорожка 01.m4a,Rock,Nevermind
+EOF

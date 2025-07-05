@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=User
+comment1.params=name\ surname\ emailAddress\ userID\ preferedCall\ userLogin\ pass
+comment1.target=void\ setUserAttributes(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ char,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ This\ function\ allows\ to\ set\ the\ attributes\ to\ this\ object\ by\ passing\ their\ value\ as\ parameters.\ When\ the\ user\ is\ being\ created\ this\ values\ will\ be\ unencrypted\r\n\ when\ the\ program\ will\ read\ the\ users\ from\ the\ file\ the\ attributes\ provided\ will\ be\ encrypted\r\n
+comment2.params=
+comment2.target=void\ encryptUserAttributes()
+comment2.text=\r\n\ This\ function\ calls\ encryptPlainText\ function\ on\ the\ sensetive\ attributes\:\ name,\ email,\ etc.\ and\ applies\ a\ hashPassword\ function\ to\ the\ password\ attribute\ which\ will\ \r\n\ return\ the\ memory\ location\ of\ the\ password\ in\ the\ hash\ table\r\n
+comment3.params=
+comment3.target=void\ decryptUserAttributes()
+comment3.text=\r\n\ Decrypt\ function\ is\ used\ to\ decrypt\ all\ the\ attributes\ and\ get\ the\ password\ from\ the\ hash\ table.\ This\ funtion\ is\ used\ when\ adding\ all\ of\ the\ users\ to\ the\ array\ from\ the\ file\r\n\ as\ the\ attributes\ stored\ in\ file\ are\ going\ to\ be\ encrypted\r\n
+comment4.params=newPassword
+comment4.target=void\ changePassword(java.lang.String)
+comment4.text=\r\n\ This\ function\ changes\ the\ password\ to\ the\ new\ value\ passed\ as\ the\ parameter.\ Since\ the\ value\ is\ plain\ text\ the\ new\ password\ will\ need\ to\ be\ hashed\ which\ could\ be\ done\ by\r\n\ setting\ all\ the\ attributes\ as\ plain\ text\ before\ calling\ the\ encryption\ function\r\n
+comment5.params=name\ surname\ addressBy
+comment5.target=void\ changeUnessentialAttributes(java.lang.String,\ java.lang.String,\ char)
+comment5.text=\r\n\ This\ function\ is\ used\ to\ allow\ easily\ change\ attributes\ that\ are\ not\ as\ important.\ This\ is\ used\ instead\ of\ setAttributes\ as\ it\ decreases\ the\ chances\ of\ changing\ primary\ data\ \r\n\ used\ to\ identify\ the\ account\ like\ the\ id.\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Overwrites\ the\ default\ toString\ function\ to\ return\ all\ the\ attributes\ as\ a\ single\ string\ separated\ by\ commas.\ \r\n
+numComments=7

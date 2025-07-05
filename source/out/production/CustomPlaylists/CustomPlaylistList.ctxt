@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=CustomPlaylistList
+comment1.params=tempPlaylist
+comment1.target=void\ addPlaylistToArray(CustomPlaylist)
+comment1.text=\n\ This\ function\ takes\ in\ the\ object\ of\ class\ custom\ playlist\ as\ a\ parameter.\ Function\ then\ adds\ the\ object\ to\ the\ next\ available\ location\ in\ the\ array.\ The\ position\ counter\ is\ then\n\ incremented\ to\ point\ to\ the\ next\ available\ location\n
+comment2.params=userID
+comment2.target=void\ readDataFromPlaylistFile(java.lang.String)
+comment2.text=\n\ The\ function\ takes\ user\ id\ as\ a\ parameter.\ Each\ user\ has\ a\ unique\ folder\ that\ has\ the\ same\ name\ as\ their\ id\ in\ the\ users\ directory\ found\ at\ the\ root\ of\ this\ module.\ Function\ first\n\ ensures\ the\ folder\ and\ the\ file\ that\ stores\ all\ of\ the\ playlists\ created\ by\ the\ user\ exist\ as\ if\ it\ doesn't\ exist\ than\ the\ user\ directory\ has\ likely\ been\ corrupted\ or\ modified\ \n\ which\ could\ lead\ to\ further\ problems,\ so\ the\ function\ will\ notify\ about\ the\ missing\ directory\ if\ it\ does\ not\ find\ the\ correct\ one.\ If\ the\ directory\ does\ exist\ an\ object\ of\ class\n\ Buffered\ Reader\ is\ used\ to\ read\ each\ individual\ line\ of\ the\ file\ until\ the\ end\ indicated\ by\ 'EOF'\ is\ reached.\ Each\ line\ is\ then\ splitted\ by\ the\ commas\ which\ creates\ an\ array\ with\n\ all\ the\ attributes\ of\ the\ object\ of\ class\ custom\ playlist.\ Temporary\ object\ is\ created\ with\ these\ attributes\ that\ is\ then\ assigned\ to\ the\ global\ array\ allPlaylists,\ representing\ every\n\ playlist\ created\ by\ the\ user.\ \n
+comment3.params=userID
+comment3.target=void\ writeAllPlaylistsToFile(java.lang.String)
+comment3.text=\n\ The\ function\ first\ reads\ from\ the\ file\ to\ ensure\ all\ of\ the\ previously\ saved\ playlists\ are\ loaded\ in\ correctly\ before\ any\ new\ playlists\ are\ saved.\ Then\ using\ an\ object\ of\ class\ file\ writer\n\ the\ function\ writes\ each\ individual\ element\ of\ the\ global\ array\ to\ the\ file\ with\ all\ the\ playlists.\ By\ using\ overwritten\ toString\ function\ each\ element\ returns\ a\ string\ of\ attributes\n\ separated\ by\ commas.\n
+numComments=4

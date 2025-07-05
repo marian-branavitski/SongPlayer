@@ -1,0 +1,2 @@
+artist,song,12.0,1,21323,users/U1/01 Дорожка 01.m4a,Rock,Single
+EOF

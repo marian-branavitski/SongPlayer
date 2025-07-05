@@ -1,0 +1,6 @@
+NewMix1,assets/no_cover.png
+Playlist 4,users/U1/DSCN0459.JPG
+Playlist 3,users/U1/DSCN0468.JPG
+NewMix,assets/no_cover.png
+MyMix,users/U1/DSCN0535.JPG
+EOF

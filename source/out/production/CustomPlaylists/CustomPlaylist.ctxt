@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=CustomPlaylist
+comment1.params=playlistTitle\ playlistCoverSource
+comment1.target=void\ setAttributes(java.lang.String,\ java.lang.String)
+comment1.text=\n\ This\ is\ a\ public\ setter\ that\ allows\ all\ other\ classes\ in\ this\ module\ set\ attributes\ to\ each\ instance\ of\ this\ class.\ This\ setter\ has\ a\ selection\ in\ it\n\ that\ checks\ one\ of\ the\ parameter\ -\ playlistCoverSource.\ In\ case\ user\ did\ not\ provide\ the\ source\ of\ the\ image\ for\ the\ playlist\ then\ the\ playlist\ will\ \ be\ assigned\ \n\ with\ the\ default\ playlist\ image\ cover\ located\ in\ the\ assets\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\n\ Overwrites\ the\ existing\ toString\ function\ to\ return\ a\ string\ of\ all\ the\ attributes\ of\ this\ class\ separated\ by\ comma.\ This\ is\ used\ in\ storing\ the\ data\ about\ the\ objects\ of\ this\ class\n
+numComments=3

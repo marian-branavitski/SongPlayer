@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=UserList
+comment1.params=tempUser
+comment1.target=void\ addUserToArray(User)
+comment1.text=\n\ Function\ takes\ an\ object\ of\ class\ User\ and\ adds\ it\ to\ the\ next\ available\ location\ in\ the\ array.\ The\ position\ counter\ is\ then\ incremented\ to\ point\ at\ the\ next\ available\ position\n\ in\ the\ array\n
+comment2.params=
+comment2.target=void\ writeAllUsersToFile()
+comment2.text=\n\ Function\ uses\ object\ of\ class\ file\ writer\ to\ write\ every\ element\ of\ the\ array\ to\ the\ file\ as\ a\ single\ line.\ To\ convert\ each\ object\ into\ a\ string\ value\ that\ can\ be\ written\n\ a\ toString\ function\ is\ used\ which\ returns\ all\ the\ attributes\ of\ the\ object\ stored\ at\ the\ 'i'\ position\ of\ the\ array\ as\ a\ single\ string\ separated\ by\ commas.\ Before\ that\ the\ \n\ encryptUserAttribute\ function\ will\ be\ called\ as\ all\ the\ attributes\ provided\ will\ be\ in\ plain\ text\ initially,\ thsi\ ensures\ all\ sensetive\ data\ is\ encrypted\ before\ being\ saved\n\ to\ the\ file\n
+comment3.params=
+comment3.target=void\ readUsersFromFile()
+comment3.text=\n\ By\ using\ object\ of\ class\ buffered\ reader\ the\ function\ reads\ each\ line\ of\ the\ file,\ splits\ it\ by\ commas,\ and\ assigns\ each\ attribute\ to\ one\ temporary\ object\ of\ class\ User.\ Since\ most\ of\ the\ \n\ attributes\ saved\ in\ file\ will\ be\ encrypted,\ the\ temporary\ user\ object\ uses\ a\ decrypt\ user\ attributes\ method\ to\ decrypt\ the\ object's\ attributes\ before\ adding\ it\ to\ the\ global\ array.\ \n
+comment4.params=providedLogin\ providedPassword
+comment4.target=int\ authenticateUser(java.lang.String,\ java.lang.String)
+comment4.text=\n\ Function\ first\ clears\ the\ array\ from\ any\ previous\ usages/\ modifications.\ Then\ the\ array\ is\ repopulated\ with\ the\ values\ from\ the\ file\ by\ calling\ a\ function\ readUsersFromFile.\ A\ rouge\ value\n\ is\ set\ to\ the\ foundAt\ variable\ which\ if\ returned\ will\ tell\ the\ other\ classes\ that\ no\ user\ was\ found\ with\ the\ parameters\ passed\ to\ the\ function\ meaning\ the\ credentials\ entered\ must\ be\ wrong.\n\ By\ iterating\ through\ the\ entire\ array\ and\ using\ a\ temporary\ user\ object\ to\ compare\ its\ attributes\ with\ the\ value\ of\ parameters,\ function\ can\ find\ a\ location\ in\ the\ global\ array\ that\ \n\ will\ have\ both\ parameters\ matching\ to\ the\ single\ user\ and\ return\ that\ value\ which\ can\ then\ be\ used\ to\ pull\ that\ user\ from\ the\ array\ and\ use\ it\ later\ on\ in\ the\ program\ to\ provide\ relevant\n\ GUI\ and\ files\n
+comment5.params=mail
+comment5.target=int\ findUserByMail(java.lang.String)
+comment5.text=\n\ This\ function\ iterates\ through\ the\ array\ trying\ to\ find\ the\ position\ of\ the\ user\ account\ that\ will\ have\ a\ matching\ email\ provided\ as\ a\ parameter\ to\ this\ function.\ If\ there\ is\ a\ match\n\ the\ location\ index\ is\ saved\ as\ a\ index\ variable\ which\ is\ then\ returned\ allowing\ to\ prove\ the\ user\ with\ such\ email\ exists\ when\ reseting\ the\ password\ and\ allow\ to\ pull\ more\ information\n\ by\ pulling\ an\ object\ of\ class\ User\ from\ the\ array\ at\ the\ location\ returned\ by\ this\ function.\ Initially\ the\ index\ value\ is\ set\ to\ a\ rouge\ value\ so\ if\ it\ is\ returned\ other\ classes\ will\n\ know\ that\ the\ user\ with\ provided\ email\ does\ not\ exist\n
+comment6.params=tempUser
+comment6.target=void\ changeUserAttributesAndSave(User)
+comment6.text=\n\ This\ function\ will\ recieve\ the\ object\ of\ class\ user,\ which\ is\ the\ updated\ version\ of\ the\ object\ as\ it\ will\ have\ a\ few\ attributes\ changed\ without\ changing\ the\ key\ ones\ like\ id,\ email\ or\n\ login.\ Function\ will\ then\ use\ the\ findUserByEmail\ to\ find\ the\ location\ of\ this\ user\ in\ the\ global\ array,\ it\ will\ then\ overwrite\ the\ existing\ user\ with\ the\ new\ one\ and\ save\ all\ the\ changes\n\ to\ the\ text\ file\ by\ calling\ a\ writeAllUsersToFile\ method.\n
+numComments=7
